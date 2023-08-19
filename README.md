@@ -50,7 +50,7 @@ The **Ultrasonic Distance Measurement System** is designed to accurately measure
 8. Compile and upload the firmware to the ATmega16 microcontroller.
 
 ## proteus
-<img src="Sim.png">
+![Simulation](Protues%20Simulation/Sim.png)
 
 ## Conclusion
 The Ultrasonic Distance Measurement System effectively combines the HC-SR04 ultrasonic sensor, the ATmega16 microcontroller, and a 2x16 LCD display to accurately measure distances. By developing the necessary drivers and libraries, the microcontroller can proficiently interact with the sensor, capture signals, and exhibit results on the LCD screen.
