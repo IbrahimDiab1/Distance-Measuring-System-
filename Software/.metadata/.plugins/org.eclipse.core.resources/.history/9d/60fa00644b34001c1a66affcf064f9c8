@@ -1,0 +1,41 @@
+/*
+ ============================================================================
+ Name        : miniproject_4.c
+ Author      : Ibrahim_Diab
+ Description : System control fan speed based on the room temperature
+ Date        : 19/06/2017
+ ============================================================================
+ */
+
+#include "gpio.h"
+#include "lcd.h"
+#include "icu.h"
+#include "ultrasonic.h"
+#include "avr/io.h" /* To use the SREG Register */
+#include "common_macros.h"
+
+
+int main(void) {
+
+	Icu_ConfigType Icu_Config = {F_CPU_8,RISING};
+
+	/* Initialize LCD driver */
+	LCD_init();
+	/* Initialize ultrasonic driver */
+	ultrasonic_init();
+
+	/* Initialize icu driver */
+	Icu_init(&Icu_Config);
+
+	/* Display this string "Temp =   C" only once on LCD at the second row*/
+	LCD_moveCursor(0,0);
+	LCD_displayString("distance =");
+	LCD_moveCursor(0,10);
+	_delay_ms(40);
+	/* Enable interrupts by setting I-bit */
+		SREG |= (1 << 7);
+	while (1) {
+		 ultra_triger();
+		  _delay_ms(15);
+	}
+}

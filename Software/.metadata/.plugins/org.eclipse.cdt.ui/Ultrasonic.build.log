@@ -1,0 +1,39 @@
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:38: warning: implicit declaration of function 'ultra_triger'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9928 bytes (60.6% Full)
+(.text + .data + .bootloader)
+
+Data:         43 bytes (4.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+??:??:?? Build Finished. 0 errors, 2 warnings. (took 565ms)
+

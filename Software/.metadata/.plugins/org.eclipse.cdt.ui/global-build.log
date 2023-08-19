@@ -1,0 +1,1266 @@
+??:??:?? **** Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+AllocationBase 0x0, BaseAddress 0x71540000, RegionSize 0x10000, State 0x10000
+C:\WinAVR-20100110\utils\bin\sh.exe: *** Couldn't reserve space for cygwin's heap, Win32 error 0
+make: *** [gpio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:128: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [Ultrasonic.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:128: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:8:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:9,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:10:25: error: timer/timer.h: No such file or directory
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:19: warning: unused variable 'temp'
+make: *** [miniproject_4.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:28: warning: implicit declaration of function 'icu_init'
+../miniproject_4.c:17: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:2:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'ultrasonic_init':
+../ultrasonic.c:16: warning: implicit declaration of function 'timer0_init'
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'lcd_goto_xy'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'lcd_write_word'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./ultrasonic.o   
+./miniproject_4.o: In function `main':
+../miniproject_4.c:28: undefined reference to `icu_init'
+./ultrasonic.o: In function `ultrasonic_init':
+../ultrasonic.c:16: undefined reference to `timer0_init'
+../ultrasonic.c:18: undefined reference to `lcd_goto_xy'
+../ultrasonic.c:18: undefined reference to `lcd_write_word'
+make: *** [Ultrasonic.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+../icu.c: In function 'Icu_setCallBack':
+../icu.c:82: warning: function return types not compatible due to 'volatile'
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:128: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:20: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building file: ../timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer.d" -MT"timer.o" -c -o "timer.o" "../timer.c"
+Finished building: ../timer.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:2:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'ultrasonic_init':
+../ultrasonic.c:16: warning: implicit declaration of function 'timer0_init'
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'lcd_goto_xy'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'lcd_write_word'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+./ultrasonic.o: In function `ultrasonic_init':
+../ultrasonic.c:18: undefined reference to `lcd_goto_xy'
+../ultrasonic.c:18: undefined reference to `lcd_write_word'
+make: *** [Ultrasonic.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:13:25: error: timer/timer.h: No such file or directory
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:20: warning: unused variable 'temp'
+make: *** [miniproject_4.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:13:25: error: timer/timer.h: No such file or directory
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:20: warning: unused variable 'temp'
+make: *** [miniproject_4.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:20: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:2:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'lcd_goto_xy'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'lcd_write_word'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+./ultrasonic.o: In function `ultrasonic_init':
+../ultrasonic.c:18: undefined reference to `lcd_goto_xy'
+../ultrasonic.c:18: undefined reference to `lcd_write_word'
+make: *** [Ultrasonic.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:41: error: 'sensor_working' undeclared (first use in this function)
+../miniproject_4.c:41: error: (Each undeclared identifier is reported only once
+../miniproject_4.c:41: error: for each function it appears in.)
+../miniproject_4.c:42: error: 'rising_edge' undeclared (first use in this function)
+../miniproject_4.c:45: error: 'timer_counter' undeclared (first use in this function)
+../miniproject_4.c:48: error: 'distance' undeclared (first use in this function)
+../miniproject_4.c:50: error: 'distance_str' undeclared (first use in this function)
+../miniproject_4.c:22: warning: unused variable 'temp'
+make: *** [miniproject_4.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:2:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'LCD_moveCursor'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9532 bytes (58.2% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9536 bytes (58.2% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:128: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:2:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'LCD_moveCursor'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9536 bytes (58.2% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../miniproject_4.c:13:
+../ultrasonic.h:11:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../ultrasonic.h:12,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9544 bytes (58.3% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (5.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building file: ../timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer.d" -MT"timer.o" -c -o "timer.o" "../timer.c"
+Finished building: ../timer.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'LCD_moveCursor'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9774 bytes (59.7% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9774 bytes (59.7% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9774 bytes (59.7% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9774 bytes (59.7% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'ultrasonic_init':
+../ultrasonic.c:12: warning: implicit declaration of function 'SET_BIT'
+../ultrasonic.c:13: warning: implicit declaration of function 'CLEAR_BIT'
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'LCD_moveCursor'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+./ultrasonic.o: In function `ultrasonic_init':
+../ultrasonic.c:12: undefined reference to `SET_BIT'
+../ultrasonic.c:13: undefined reference to `CLEAR_BIT'
+../ultrasonic.c:14: undefined reference to `SET_BIT'
+make: *** [Ultrasonic.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'LCD_moveCursor'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9774 bytes (59.7% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9762 bytes (59.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9762 bytes (59.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:22: warning: unused variable 'temp'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9762 bytes (59.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:38: warning: implicit declaration of function 'ultra_triger'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9994 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9996 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9984 bytes (60.9% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'LCD_moveCursor'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10006 bytes (61.1% Full)
+(.text + .data + .bootloader)
+
+Data:         41 bytes (4.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:46: warning: implicit declaration of function 'LCD_moveCursor'
+../ultrasonic.c:47: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:48: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:49: warning: implicit declaration of function 'LCD_displayString'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10006 bytes (61.1% Full)
+(.text + .data + .bootloader)
+
+Data:         41 bytes (4.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:48: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../ultrasonic.c:49: warning: pointer targets in passing argument 1 of 'strcat' differ in signedness
+../ultrasonic.c:50: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10002 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:         41 bytes (4.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9918 bytes (60.5% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (3.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:38: warning: implicit declaration of function 'ultra_triger'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9920 bytes (60.5% Full)
+(.text + .data + .bootloader)
+
+Data:         39 bytes (3.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:38: warning: implicit declaration of function 'ultra_triger'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9924 bytes (60.6% Full)
+(.text + .data + .bootloader)
+
+Data:         43 bytes (4.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function '__vector_2':
+../ultrasonic.c:47: warning: implicit declaration of function 'printf'
+../ultrasonic.c:47: warning: incompatible implicit declaration of built-in function 'printf'
+../ultrasonic.c:47: warning: format '%d' expects type 'int', but argument 2 has type 'uint32_t'
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11306 bytes (69.0% Full)
+(.text + .data + .bootloader)
+
+Data:         51 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.h:11,
+                 from ../ultrasonic.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9924 bytes (60.6% Full)
+(.text + .data + .bootloader)
+
+Data:         43 bytes (4.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project Ultrasonic ****
+make all 
+Building file: ../miniproject_4.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"miniproject_4.d" -MT"miniproject_4.o" -c -o "miniproject_4.o" "../miniproject_4.c"
+In file included from ../ultrasonic.h:11,
+                 from ../miniproject_4.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../miniproject_4.c: In function 'main':
+../miniproject_4.c:38: warning: implicit declaration of function 'ultra_triger'
+Finished building: ../miniproject_4.c
+ 
+Building target: Ultrasonic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Ultrasonic.map -mmcu=atmega16 -o "Ultrasonic.elf"  ./gpio.o ./icu.o ./lcd.o ./miniproject_4.o ./timer.o ./ultrasonic.o   
+Finished building target: Ultrasonic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Ultrasonic.elf  >"Ultrasonic.lss"
+Finished building: Ultrasonic.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Ultrasonic.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9928 bytes (60.6% Full)
+(.text + .data + .bootloader)
+
+Data:         43 bytes (4.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
